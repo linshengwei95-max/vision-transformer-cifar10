@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-10-23",
+  "accuracy_source": "validation subset of official CIFAR-10 train split",
+  "official_test_evaluated": false,
+  "weights_included": false,
+  "dataset_images_included": false,
+  "notes": [
+    "CSV, indices and PNG copies preserve original bytes.",
+    "Public configs rewrite host-specific paths without changing numerical model/training/normalization settings.",
+    "Summaries select measured fields from original records.",
+    "Original outputs remain local and unchanged; .gitattributes preserves results bytes across Git checkouts."
+  ],
+  "files": [
+    {
+      "path": "results/tiny_vit/config.json",
+      "bytes": 2130,
+      "sha256": "fb58bc783e4ca4dee1f54a1936694437f1249300e75d339346629f31768f24c1",
+      "operation": "public_paths",
+      "source": "outputs/task011_cifar10_vit_seed42_20261023_213930/config.json",
+      "source_sha256": "bd3d26daf73b898e0850f71ef9cac04eb3ab36279d5f6724bed48a1388cdbb68"
+    },
+    {
+      "path": "results/tiny_vit/metrics.csv",
+      "bytes": 5449,
+      "sha256": "8a3f35c52e9611e20352ff9e4e81b87922ddf5474253640a506c2b952c88dec4",
+      "operation": "byte_copy",
+      "source": "outputs/task011_cifar10_vit_seed42_20261023_213930/metrics.csv",
+      "source_sha256": "8a3f35c52e9611e20352ff9e4e81b87922ddf5474253640a506c2b952c88dec4"
+    },
+    {
+      "path": "results/tiny_vit/training_curves.png",
+      "bytes": 150731,
+      "sha256": "320b490a47a87d41ce114e8696eab6804c9d68d74130c602c60c62d77ac48619",
+      "operation": "byte_copy",
+      "source": "outputs/task011_cifar10_vit_seed42_20261023_213930/training_curves.png",
+      "source_sha256": "320b490a47a87d41ce114e8696eab6804c9d68d74130c602c60c62d77ac48619"
+    },
+    {
+      "path": "results/tiny_vit/summary.json",
+      "bytes": 4058,
+      "sha256": "0b2f5fc182f1dbd3e0b0ea012d3247a2ea4c0c7bc5d0414f0b2463598ba7f8e9",
+      "operation": "summary_extract",
+      "source": "outputs/task011_cifar10_vit_seed42_20261023_213930/training_summary.json",
+      "source_sha256": "37c57cc68d47110d1e6601865aa596e73794ab7a5ae3865307d93906e3ec4558"
+    },
+    {
+      "path": "results/resnet18/config.json",
+      "bytes": 2516,
+      "sha256": "6f251066336180e97c3412d24c3e76b31f62ed2e83859c0f286c67c79933826b",
+      "operation": "public_paths",
+      "source": "outputs/task012_resnet18_seed42_20261023_222908/config.json",
+      "source_sha256": "e15a8d47e5f6fab6c5cd52858217b418e6f6ebf490d4ce42b19823ce195723d0"
+    },
+    {
+      "path": "results/resnet18/metrics.csv",
+      "bytes": 5317,
+      "sha256": "182436c834897cbc06bf64375cce386a43308e0b3318e659c97ec949235c329d",
+      "operation": "byte_copy",
+      "source": "outputs/task012_resnet18_seed42_20261023_222908/metrics.csv",
+      "source_sha256": "182436c834897cbc06bf64375cce386a43308e0b3318e659c97ec949235c329d"
+    },
+    {
+      "path": "results/resnet18/training_curves.png",
+      "bytes": 167822,
+      "sha256": "fedbfeb8df2c69aa7eba5ba8c7246bd593de0181565e6a48977ad6128abe07bc",
+      "operation": "byte_copy",
+      "source": "outputs/task012_resnet18_seed42_20261023_222908/training_curves.png",
+      "source_sha256": "fedbfeb8df2c69aa7eba5ba8c7246bd593de0181565e6a48977ad6128abe07bc"
+    },
+    {
+      "path": "results/resnet18/summary.json",
+      "bytes": 4030,
+      "sha256": "4a379e079134896d6d7a50456b3d754559d086763d005318bcbf354aebb34eea",
+      "operation": "summary_extract",
+      "source": "outputs/task012_resnet18_seed42_20261023_222908/training_summary.json",
+      "source_sha256": "8bdab4931ef1466ade8590c04bbe3dbd18af6f367f1af8d282cdaf7c6f748c07"
+    },
+    {
+      "path": "results/tiny_vit/split_indices.json",
+      "bytes": 589139,
+      "sha256": "e32757ef9a3110a34b3b240897a4ce02a27cde1f782d1ed6d6ada88722babc53",
+      "operation": "byte_copy",
+      "source": "outputs/task011_cifar10_vit_seed42_20261023_213930/split_indices.json",
+      "source_sha256": "e32757ef9a3110a34b3b240897a4ce02a27cde1f782d1ed6d6ada88722babc53"
+    },
+    {
+      "path": "results/resnet18/runtime.json",
+      "bytes": 398,
+      "sha256": "af8678f70388e638c29ade89695e4634725bd1cab6b8cf8094adecabb6fd48d0",
+      "operation": "byte_copy",
+      "source": "outputs/task012_resnet18_seed42_20261023_222908/runtime.json",
+      "source_sha256": "af8678f70388e638c29ade89695e4634725bd1cab6b8cf8094adecabb6fd48d0"
+    },
+    {
+      "path": "results/comparison/summary.json",
+      "bytes": 9188,
+      "sha256": "00214214258b425c365492cefe8e65ab54628ca8517b4bb040bf4d882d315818",
+      "operation": "byte_copy",
+      "source": "outputs/task012_resnet18_seed42_20261023_222908/comparison.json",
+      "source_sha256": "00214214258b425c365492cefe8e65ab54628ca8517b4bb040bf4d882d315818"
+    },
+    {
+      "path": "results/comparison/metrics.csv",
+      "bytes": 11575,
+      "sha256": "0637d0ca72c7c165c2ccd07dde230b36dfb8cbe16df86ba05a4bcde1784b2a77",
+      "operation": "byte_copy",
+      "source": "outputs/task012_resnet18_seed42_20261023_222908/comparison_metrics.csv",
+      "source_sha256": "0637d0ca72c7c165c2ccd07dde230b36dfb8cbe16df86ba05a4bcde1784b2a77"
+    },
+    {
+      "path": "results/comparison/curves.png",
+      "bytes": 211636,
+      "sha256": "824abadb18cd8c003651917f935e3e49de547fedc0ba1a362c3fbe6de6d9a1e7",
+      "operation": "byte_copy",
+      "source": "outputs/task012_resnet18_seed42_20261023_222908/comparison_curves.png",
+      "source_sha256": "824abadb18cd8c003651917f935e3e49de547fedc0ba1a362c3fbe6de6d9a1e7"
+    },
+    {
+      "path": "results/comparison/inference_benchmark.json",
+      "bytes": 824,
+      "sha256": "436878a6b8d29436523c8ac365f0d910f9358ad49b8ac8c002d785bbd3f1aff6",
+      "operation": "byte_copy",
+      "source": "outputs/task012_resnet18_seed42_20261023_222908/inference_benchmark.json",
+      "source_sha256": "436878a6b8d29436523c8ac365f0d910f9358ad49b8ac8c002d785bbd3f1aff6"
+    },
+    {
+      "path": "results/environment.json",
+      "bytes": 1532,
+      "sha256": "7de2a926690fe06da04f91dd9120297b9a534605e74b6f62dc60f1e7c15b9df3",
+      "operation": "derived_record"
+    }
+  ]
+}

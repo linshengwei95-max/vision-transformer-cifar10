@@ -1,0 +1,77 @@
+{
+  "mode": "train",
+  "model": {
+    "architecture": "torchvision.resnet18",
+    "weights": null,
+    "image_size": 32,
+    "conv1": {
+      "kernel_size": 3,
+      "stride": 1,
+      "padding": 1,
+      "bias": false
+    },
+    "maxpool": "Identity",
+    "num_classes": 10,
+    "blocks": [
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "training": {
+    "batch_size": 64,
+    "epochs": 50,
+    "warmup_epochs": 5,
+    "seed": 42,
+    "num_workers": 0,
+    "lr": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "min_lr": 1e-05
+  },
+  "optimizer": "SGD",
+  "nesterov": false,
+  "loss": "CrossEntropyLoss",
+  "scheduler": "per-step warmup+cosine",
+  "data_root": "<external CIFAR-10 root supplied via --data-root>",
+  "real_data": true,
+  "split_sha256": "0c4d2f59fc70476f9a67fb0549d800f87f61f113e12f9ec5fc2ea319d9a77077",
+  "split_file_sha256": "e32757ef9a3110a34b3b240897a4ce02a27cde1f782d1ed6d6ada88722babc53",
+  "split_source": "../tiny_vit/split_indices.json",
+  "split_method": "read saved task011 indices; never regenerated",
+  "reference_dir": "../tiny_vit",
+  "normalization": {
+    "mean": [
+      0.4914,
+      0.4822,
+      0.4465
+    ],
+    "std": [
+      0.247,
+      0.2435,
+      0.2616
+    ]
+  },
+  "train_transform": "Compose(\n    RandomCrop(size=(32, 32), padding=4)\n    RandomHorizontalFlip(p=0.5)\n    ToTensor()\n    Normalize(mean=(0.4914, 0.4822, 0.4465), std=(0.247, 0.2435, 0.2616))\n)",
+  "validation_transform": "Compose(\n    ToTensor()\n    Normalize(mean=(0.4914, 0.4822, 0.4465), std=(0.247, 0.2435, 0.2616))\n)",
+  "num_parameters": 11173962,
+  "accuracy_scale": "0..1",
+  "csv_learning_rate": "last optimizer batch in epoch",
+  "environment": {
+    "python_executable": "<selected Python 3.10.20 interpreter>",
+    "python": "3.10.20",
+    "torch": "2.13.0+cu130",
+    "torchvision": "0.28.0+cpu",
+    "device": "cuda",
+    "gpu_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "gpu_total_bytes": 8546484224
+  },
+  "resume_from": null,
+  "comparison_scope": "same indices/preprocessing/epochs/batch/seed; different model capacity and optimizer recipe; not architecture-only ablation",
+  "public_copy": {
+    "source_experiment": "outputs/task012_resnet18_seed42_20261023_222908",
+    "path_fields_rewritten": true,
+    "note": "Public display copy. Original numerical configuration is retained; local path and free-space metadata are replaced/removed. Original files remain untouched."
+  }
+}

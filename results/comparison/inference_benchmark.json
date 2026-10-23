@@ -1,0 +1,24 @@
+{
+  "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "batch_size": 64,
+  "dtype": "float32",
+  "mode": "eval+inference_mode",
+  "warmup_iterations": 20,
+  "timed_iterations": 100,
+  "timing": "CUDA events, synchronized",
+  "includes_data_loading_or_preprocessing": false,
+  "input": "same synthetic [64,3,32,32] tensor",
+  "scope": "single fixed-order run, batch throughput; not single-request end-to-end latency or architecture-only speed claim",
+  "results": {
+    "Tiny ViT": {
+      "mean_batch_ms": 1.2527597045898438,
+      "amortized_ms_per_image": 0.01957437038421631,
+      "images_per_second": 51087.2115103301
+    },
+    "ResNet18": {
+      "mean_batch_ms": 12.177728271484375,
+      "amortized_ms_per_image": 0.19027700424194335,
+      "images_per_second": 5255.495817710414
+    }
+  }
+}

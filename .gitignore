@@ -1,0 +1,43 @@
+# Preserve original runs locally; publish selected lightweight copies in results/.
+/outputs/
+/data/
+/datasets/
+**/cifar-10-batches-py/
+**/cifar-10-python.tar.gz
+
+# Model weights and export files are not part of this source/results portfolio.
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+**/checkpoints/
+
+# Environments, caches, temporary files and local editor settings.
+.venv/
+venv/
+env/
+.conda/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.tmp
+*.log
+*.zip
+*.tar.gz
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+.env
+.env.*
+
+# Local collaboration/learning records remain available in this workspace.
+/AGENTS.md
+/PROJECT_HANDOFF.md
+/LEARNING_LOG.md

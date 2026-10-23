@@ -1,0 +1,8 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+requirements*.txt text eol=lf
+
+# Preserve artifact bytes (including original JSON/CSV line endings) for SHA256.
+results/** -text
+*.png binary

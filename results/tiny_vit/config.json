@@ -1,0 +1,65 @@
+{
+  "mode": "train",
+  "model": {
+    "image_size": 32,
+    "patch_size": 4,
+    "in_channels": 3,
+    "embed_dim": 96,
+    "num_heads": 4,
+    "depth": 2,
+    "mlp_ratio": 4.0,
+    "num_classes": 10
+  },
+  "training": {
+    "lr": 0.0003,
+    "weight_decay": 0.05,
+    "batch_size": 64,
+    "epochs": 50,
+    "warmup_epochs": 5,
+    "min_lr": 1e-06,
+    "seed": 42,
+    "val_size": 5000,
+    "num_workers": 0
+  },
+  "optimizer": "AdamW",
+  "loss": "CrossEntropyLoss",
+  "scheduler": "per-step warmup+cosine",
+  "data_root": "<external CIFAR-10 root supplied via --data-root>",
+  "real_data": true,
+  "dataset_attempts": [],
+  "split_sha256": "0c4d2f59fc70476f9a67fb0549d800f87f61f113e12f9ec5fc2ea319d9a77077",
+  "normalization": {
+    "mean": [
+      0.4914,
+      0.4822,
+      0.4465
+    ],
+    "std": [
+      0.247,
+      0.2435,
+      0.2616
+    ]
+  },
+  "accuracy_scale": "0..1",
+  "csv_learning_rate": "last optimizer batch in epoch",
+  "num_parameters": 235882,
+  "train_transform": "Compose(\n    RandomCrop(size=(32, 32), padding=4)\n    RandomHorizontalFlip(p=0.5)\n    ToTensor()\n    Normalize(mean=(0.4914, 0.4822, 0.4465), std=(0.247, 0.2435, 0.2616))\n)",
+  "validation_transform": "Compose(\n    ToTensor()\n    Normalize(mean=(0.4914, 0.4822, 0.4465), std=(0.247, 0.2435, 0.2616))\n)",
+  "environment": {
+    "python_executable": "<selected Python 3.10.20 interpreter>",
+    "python": "3.10.20",
+    "torch": "2.13.0+cu130",
+    "torchvision": "0.28.0+cpu",
+    "device": "cuda",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "gpu_total_bytes": 8546484224
+  },
+  "resume_from": null,
+  "resume_scope": "complete epoch boundary; same configuration and split; same software/device for exact replay",
+  "public_copy": {
+    "source_experiment": "outputs/task011_cifar10_vit_seed42_20261023_213930",
+    "path_fields_rewritten": true,
+    "note": "Public display copy. Original numerical configuration is retained; local path and free-space metadata are replaced/removed. Original files remain untouched."
+  }
+}

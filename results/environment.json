@@ -1,0 +1,49 @@
+{
+  "recorded_date": "2026-10-23",
+  "python": "3.10.20",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "gpu_total_bytes": 8546484224,
+  "packages": {
+    "torch": {
+      "metadata_version": "2.13.0+cu130",
+      "runtime_version": "2.13.0+cu130",
+      "requires_python": ">=3.10"
+    },
+    "torchvision": {
+      "metadata_version": "0.28.0",
+      "runtime_version": "0.28.0+cpu",
+      "requires_python": ">=3.10,!=3.14.1"
+    },
+    "numpy": {
+      "metadata_version": "2.2.6",
+      "runtime_version": "2.2.6",
+      "requires_python": ">=3.10"
+    },
+    "Pillow": {
+      "metadata_version": "12.3.0",
+      "runtime_version": "12.3.0",
+      "requires_python": ">=3.10"
+    },
+    "matplotlib": {
+      "metadata_version": "3.10.9",
+      "runtime_version": "3.10.9",
+      "requires_python": ">=3.10"
+    }
+  },
+  "dependency_validation": {
+    "pip_check": "No broken requirements found.",
+    "torchvision_requires_torch": "==2.13.0",
+    "python_requirements_checked": true,
+    "pypi_release_json_http_status": {
+      "torch==2.13.0": 200,
+      "torchvision==0.28.0": 200,
+      "numpy==2.2.6": 200,
+      "Pillow==12.3.0": 200,
+      "matplotlib==3.10.9": 200
+    },
+    "fresh_install_performed": false,
+    "dependency_changes_performed": false
+  },
+  "scope": "Observed working environment, not a complete cross-platform lock; wheel build/source and GPU driver must be selected for the reproduction machine."
+}

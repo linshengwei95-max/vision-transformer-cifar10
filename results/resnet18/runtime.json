@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "started_at": "2026-10-23T22:29:12.976409",
+  "ended_at": "2026-10-23T23:05:36.203935",
+  "train_loop_wall_seconds": 2183.2068200000067,
+  "cuda_peak_allocated_bytes": 519824896,
+  "cuda_peak_reserved_bytes": 620756992,
+  "peak_scope": "formal train loop only; excludes disposable preflight; not whole-card driver usage",
+  "official_test_evaluated": false
+}
