@@ -1,8 +1,8 @@
 # Vision Transformer：从核心实现到 CIFAR-10 实验
 
-一个独立的 PyTorch 视觉学习与工程实践项目：显式实现 Patch Embedding、缩放点积注意力、多头注意力和 Pre-Norm Encoder，组合成可配置的小型 ViT，再完成 CIFAR-10 真实训练及 ResNet18 实用对照。
+个人 Vision Transformer 学习与工程实践项目：基于 PyTorch 显式实现 Patch Embedding、缩放点积注意力、多头注意力和 Pre-Norm Encoder，组合成可配置的小型 ViT，再完成 CIFAR-10 真实训练及 ResNet18 实用对照。
 
-项目采用 AI 辅助工程协作，保留逐模块实现、数值检查和实验记录。当前已完成核心实现、两轮 50 Epoch 基线训练、对照分析及作品集整理。
+项目覆盖核心模块实现、数值正确性验证、完整模型训练与对照分析，保留逐模块实现和完整实验记录。当前已完成核心实现、两轮 50 Epoch 基线训练、对照分析及作品集整理。
 
 **所有准确率均来自固定验证集，不是 CIFAR-10 官方测试集成绩。两种模型使用不同优化配方，结果不构成纯架构消融。**
 
@@ -130,7 +130,7 @@ ViT 原入口按 seed=42 生成划分；复现完成后可用 `scripts/verify_po
 └── outputs/            # 原始实验与权重保留本地，Git 忽略
 ```
 
-本地的 AGENTS.md、PROJECT_HANDOFF.md 和 LEARNING_LOG.md 用于协作与学习记录，默认不纳入公开清单。公开结果副本只替换机器专属路径，指标和数值配置保持真实；逐文件来源及 SHA256 见 [manifest.json](results/manifest.json)。
+公开结果副本只替换机器专属路径，指标和数值配置保持真实；逐文件来源及 SHA256 见 [manifest.json](results/manifest.json)。
 
 ## 实验限制与后续方向
 
